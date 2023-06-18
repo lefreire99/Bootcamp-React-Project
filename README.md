@@ -4,7 +4,7 @@ Aplicación para recepción de autos en un taller automotriz. Luego de tomar tod
 Para el desarrollo de la aplicación se usó la libreira react-hook-forms para el manejo de formularios, además, la implementación de redux y context para la consistencia y manejo de estados entre cada uno de los componentes.
 
 # Desarrollo
-1.- Clonar el repositorio.
+1.- Clonar el repositorio.\n
 2.- Ubicar la carpeta en donde clono el repositorio y correr el comando npm install para instalar las dependencias.
 3.- Correr el comando npm start para iniciar la aplicación localmente.
 4. Realizar los cambios deseados.
