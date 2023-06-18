@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Descripción
+El proyecto escogido para el módulo de React del bootcamp fue la segunda propuesta de proyecto que se basa en realizar lo siguiente:
+Aplicación para recepción de autos en un taller automotriz. Luego de tomar todos los datos necesarios la aplicación generará una orden de trabajo. Se constará de 4 secciones, datos del cliente, datos del vehículo, selección de servicios , y finalmente, la orden de trabajo.
+Para el desarrollo de la aplicación se usó la libreira react-hook-forms para el manejo de formularios, además, la implementación de redux y context para la consistencia y manejo de estados entre cada uno de los componentes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Desarrollo
+1.- Clonar el repositorio.
+2.- Ubicar la carpeta en donde clono el repositorio y correr el comando npm install para instalar las dependencias.
+3.- Correr el comando npm start para iniciar la aplicación localmente.
+4. Realizar los cambios deseados.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En caso de terminar la ejecución de la aplicación pulsar las teclas ctrl + c .
+# Despliegue
+La aplicación se desplegó usando un bucket de s3 en aws. En caso de realizar un despliegue en un nuevo bucket se deben seguir los siguientes pasos:
+1.- Ubicar la carpeta del proyecto y ejecutar el comando npm run build para crear archivos estáticos y listos para producción.
+2.- Crear un bucket en s3 con sus debidos permisos.
+3.- En la sección de propiedades del bucket habilitar alojamiento de sitios estáticos.
+4.- Modificar los permisos y las póliticas de seguridad del bucket en caso de ser necesario.
+5.- Cargar los archivos y carpetas que se encunetra dentro de la carpeta build que se generó luego de ejecutar el comando del paso 1.
+6.- La url se encuentra en la misma sección en donde se habilitó el alojamiento (Parte final de la sección de propiedades del bucket).
